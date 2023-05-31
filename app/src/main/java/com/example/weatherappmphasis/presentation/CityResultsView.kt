@@ -56,7 +56,7 @@ fun CityViewContainer(cityEntity: CityEntity?) {
                 )
                 Row {
                     Text(
-                        text = "Weather: ${cityEntity.weather?.first()?.main}", modifier = Modifier
+                        text = "Weather: ${cityEntity.weather?.first()?.description}", modifier = Modifier
                             .padding(5.dp)
                     )
                     GlideImage(model = cityEntity.icon , contentDescription =null, modifier = Modifier.size(35.dp))
