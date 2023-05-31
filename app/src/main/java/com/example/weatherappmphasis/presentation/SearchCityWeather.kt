@@ -42,7 +42,6 @@ fun SearchTextCity(onTextChange: (String) -> Unit, onClickSearch: (String) -> Un
     }
 }
 
-
 @Preview
 @Composable
 fun TextPreview() {

@@ -59,7 +59,7 @@ fun CityViewContainer(cityEntity: CityEntity?) {
                         text = "Weather: ${cityEntity.weather?.first()?.main}", modifier = Modifier
                             .padding(5.dp)
                     )
-                    GlideImage(model = "https://openweathermap.org/img/wn/10d@2x.png" , contentDescription =null, modifier = Modifier.size(35.dp))
+                    GlideImage(model = cityEntity.icon , contentDescription =null, modifier = Modifier.size(35.dp))
                 }
             }
             Column() {
